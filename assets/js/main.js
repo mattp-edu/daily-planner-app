@@ -11,4 +11,18 @@ $(document).ready(function () {
 
     // page setup -- END --
 
+
+    // on hit the local storage will be updated
+    $('.theSaveButton').on('click', event => {
+        var text_field = $(event.target).parent().prev().children().eq(0).val();
+        var hour_id = $(event.target).parent().prev().children().eq(0).attr('id');
+
+        if(text_field === '') { 
+            localStorage.removeItem(hour_id, text_field);
+        }
+        else {
+            localStorage.setItem(hour_id, text_field);
+        }
+        
+    });
 });
