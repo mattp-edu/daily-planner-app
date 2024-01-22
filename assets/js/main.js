@@ -7,4 +7,8 @@ $(document).ready(function () {
     const TIME = dayjs().format('HH:mm');
     $('#currentDay').text(TODAY + ' [' + TIME + ']');
 
+    parseRows(BUSINESS_HOURS, localStorage, $('#calendar'));
+
+    // page setup -- END --
+
 });

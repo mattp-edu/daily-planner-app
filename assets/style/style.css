@@ -11,6 +11,8 @@ textarea {
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+  width: 100%;
+  height: 100%;
 }
 
 header {
@@ -49,7 +51,7 @@ header {
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #f0ff9d;
   color: white;
 }
 
@@ -64,9 +66,10 @@ header {
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+  font-size: 30px;
 }
 
 .saveBtn i:hover {
-  font-size: 20px;
+  color: #3fff79;
   transition: all 0.3s ease-in-out;
 }
